@@ -1,0 +1,273 @@
+/*IMPORTANDO FUENTES DE GOOGLE*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*PARA EL LOGO*/
+.Barra-lateral_encabezado img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+
+/*PARA EL BODY*/
+body{
+    background: #1f101c;
+    /*altura minima*/
+    min-height: 100vh;
+}
+
+/*PARA LA BARRA LATERAL O MENÚ */
+
+.Barra-Lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /*ancho del menu*/
+    width: 300px;
+    background: #311b31;
+    padding: 20px 25px;
+}
+
+.Barra-lateral_encabezado{
+    align-items: center;
+    display: flex;
+}
+
+.Barra-lateral_encabezado h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 25px;
+}
+
+.barra_links{
+    /*quitarle lospuntos de lista*/
+    list-style: none;
+    margin-top: 20px    ;
+}
+.barra_links h4{
+    color: #fff;
+    font-weight: 500;
+    /*MARGEN ENTRE OPCIOENS*/
+    margin: 10px 0 ;
+    /*PARA ESPACIOS EN BLANCO*/
+    white-space: nowrap;
+}
+
+.barra_links li a{
+    display: flex;
+    align-items: center;
+    /*espacio entre las opciones*/
+    gap: 0 20px;
+    color: #bb87c0;
+    font-weight: 500;
+    padding: 15px 20px;
+    /*ára quiatar las lineas que subrayan las opciones*/
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.barra_links li a:hover{
+    background: #bb87c0;
+    color: #ffffff;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+/*PARA EL RESTO DE LA PAGINA*/
+
+/*TITULO*/
+h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 140px;
+    margin-left: 90px;
+    font-size: 100px;
+    color: white;
+}
+
+video{
+    width: 60%;
+    max-width: 800%;
+    display: block;
+    margin: 50px auto;
+    padding-left:0px;
+    margin-left: 500px;
+    border-radius: 20px;
+}
+
+.eslogan{
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 120px;
+    font-size: 20px;
+    color: white;
+}
+
+.propuesta{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 120px;
+    padding-top: 100px;
+    padding-left: 140px;
+    padding-bottom: 100px;
+    color: white;
+    padding-left: 250px;
+    padding-right: 260px;
+    text-align: justify;
+    font-size: 20px;
+    background: #543b57;
+    margin-left: 500px;
+    margin-right: 250px;
+    border-radius: 20px;
+}
+
+/*BOTON PARA VER EL CATALOGO*/
+.vercatalogo{
+    position: relative;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 950px;
+    width: 200px;
+    height: 60px;
+    background: #361f32;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.vercatalogo a{
+    color: rgb(151, 98, 151);
+    text-decoration: none;
+}
+
+.vercatalogo a:hover{
+    color: #311b31;
+}
+
+.vercatalogo:hover{
+    background: white;
+    color: #311b31;
+}
+
+/*VOLANTE*/
+.volante{
+    align-items: center;
+    padding-top: 100px;
+    margin-left: 33%;
+    margin-bottom: 100px;
+}
+
+/*PIE DE PAGINA*/
+
+.Pie-Pagina{
+    position: relative;
+    width: 100%;
+    background: #3a223a;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+/*PARA EL MENÚ DEL FOOTER*/
+.menupie{
+list-style: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+
+.menu-icono{
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.menu-icono:hover{
+    color: #bb87c0;
+}
+.derechos{
+    color: white;
+}
+
+/*EN QUE NOS DIFERENCIAMOS*/
+.diferenciamos{
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    color: white;
+    padding-left: 250px;
+    padding-right: 260px;
+    text-align: justify;
+    font-size: 20px;
+    background: #4a304d;
+    margin-left: 400px ;
+    margin-right: 150px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.diferenciamos:hover{
+    background: #fff;
+    color: black;
+    transition: all 0.5s;
+}
+
+.diferenciamosDos{
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-bottom: 50px;
+    color: white;
+    padding-left: 250px;
+    padding-right: 260px;
+    text-align: justify;
+    font-size: 20px;
+    background: #825e86;
+    margin-left: 400px ;
+    margin-right: 150px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.diferenciamosDos:hover{
+    background: #fff;
+    color: black;
+    transition: all 0.5s;
+}
+
+.elegirnos{
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 120px;
+    font-size: 50px;
+    color: white;
+    padding-bottom: 100px;
+}
+

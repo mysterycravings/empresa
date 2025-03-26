@@ -1,0 +1,196 @@
+/*IMPORTANDO FUENTES DE GOOGLE*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*PARA EL LOGO*/
+.Barra-lateral_encabezado img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+
+/*PARA EL BODY*/
+body{
+    background: #1f101c;
+    /*altura minima*/
+    min-height: 100vh;
+}
+
+/*PARA LA BARRA LATERAL O MENÚ */
+
+.Barra-Lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /*ancho del menu*/
+    width: 300px;
+    background: #311b31;
+    padding: 20px 25px;
+}
+
+.Barra-lateral_encabezado{
+    align-items: center;
+    display: flex;
+}
+
+.Barra-lateral_encabezado h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 25px;
+}
+
+.barra_links{
+    /*quitarle lospuntos de lista*/
+    list-style: none;
+    margin-top: 20px    ;
+}
+.barra_links h4{
+    color: #fff;
+    font-weight: 500;
+    /*MARGEN ENTRE OPCIOENS*/
+    margin: 10px 0 ;
+    /*PARA ESPACIOS EN BLANCO*/
+    white-space: nowrap;
+}
+
+.barra_links li a{
+    display: flex;
+    align-items: center;
+    /*espacio entre las opciones*/
+    gap: 0 20px;
+    color: #bb87c0;
+    font-weight: 500;
+    padding: 15px 20px;
+    /*ára quiatar las lineas que subrayan las opciones*/
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.barra_links li a:hover{
+    background: #bb87c0;
+    color: #ffffff;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+/*PARA EL CATALOGO*/
+
+.TituloProductos{
+    text-align: center;
+    margin: 50px;
+    margin-left: 120px;
+    color: white;
+    font-size: 60px;
+}
+
+.Productos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    gap: 30px; 
+    justify-content: center;
+}
+
+
+.Productos_caja {
+    background: white;
+    padding: 15px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s;
+    margin: 15px;
+}
+
+.Productos_caja:hover{
+    background: rgb(151, 20, 145);
+    color: white;
+    transition: all 0.5s;
+}
+
+
+.Productos_caja img {
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.OrdenarB{
+    align-items: center;
+    width: 180px;
+    margin-top: 10px;
+    margin-left: 950px;
+    width: 200px;
+    height: 60px;
+    background: #361f32;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.OrdenarB a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.Precio{
+    color: rgb(187, 98, 168);
+    font-size: 30px;
+}
+
+/*PIE DE PAGINA*/
+
+.Pie-Pagina{
+    position: relative;
+    width: 100%;
+    background: #3a223a;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+/*PARA EL MENÚ DEL FOOTER*/
+.menupie{
+list-style: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+
+.menu-icono{
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.menu-icono:hover{
+    color: #bb87c0;
+}
+.derechos{
+    color: white;
+}
