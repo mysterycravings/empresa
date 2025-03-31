@@ -149,8 +149,8 @@ body{
 }
 
 h3{
-    width: 400px;
-    height: 300px;
+    margin-left: 400px;
+    margin-right: 300px;
 }
 
 /*PIE DE PAGINA*/
