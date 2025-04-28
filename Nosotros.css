@@ -1,0 +1,553 @@
+/*Fuentes de Google para la pagina (le pondre una pero digan cual quieren pa cambiarlo)*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 100px; /* o más si lo necesitas */
+}
+
+/*MENU*/
+
+.menu{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .navbar{
+    display: flex;
+  }
+  
+  .menu-1{
+    margin-right: 180px;
+  }
+  
+  .menu-2{
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-1{
+    width: 0;
+  }
+  
+  .logo-2{
+    width: 150px;
+  }
+  
+  .socials{
+    display: flex;
+  }
+  
+  .social{
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #1d4d8b;
+    border-radius: 50%;
+  }
+  
+  .social:hover{
+  background-color: #1d4d8b;
+  }
+  
+  .social img{
+    margin: 8px 0 0 10px;
+  }
+  
+  .menu .navbar ul li{
+    position: relative;
+    float: left;
+  }
+  
+  .menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+  }
+  
+  .menu .navbar ul li a:hover{
+    color: #1d4d8b;
+  }
+  
+  #menu{
+    display: none;
+  }
+  
+  .menu-icono{
+    width: 25px;
+  }
+  
+  .menu label{
+    cursor: pointer;
+    display: none;
+  }
+
+  
+ /*FOOTER*/
+
+.footer{
+  padding: 100px 360px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links h4{
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.links ul li a{
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.links ul li a:hover{
+  color: #6281aa;
+}
+
+.footer-txt{
+  color: rgb(255, 255, 255);
+  position: static;
+  text-align: center;
+}
+
+  /*video*/
+
+  .video {
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px; /* o más si lo necesitas */
+  }
+  
+  .video-vid {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 16/9; /* o una altura fija si prefieres */
+  }
+  
+  .video-vid video {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0px 90px rgba(95, 83, 161, 0.87);
+  }
+
+  .video-vid video:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0px 90px rgba(127, 67, 196, 0.774);
+  }
+
+
+  /*PARA LOS FA*/
+  .fireworks {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 2;
+    overflow: hidden;
+  }
+  
+
+  /*PARA LA INFORMACIÓN*/
+
+  .info{
+    padding: 100px 360px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .info-img{
+    width: 50%;
+  }
+  
+  .info-img img{
+    width: 500px;
+    height: 250px;
+  }
+  
+  .info-txt{
+    width: 50%;
+  }
+  
+  .info-txt .historia{
+    font-size: 45px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  
+  .info-txt p{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  
+  .btn-2{
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #1d4d8b;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px;
+  }
+  
+  .btn-2:hover{
+    background-color: #1d4d8b;
+  }
+  
+  /*SCROLL DE IMAGENES*/
+  .slider-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('Images/bg-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .slider-images{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+  }
+  .slider-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .slider-img{
+    width: 110px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.7s ease;
+  }
+  .slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
+    height: 480px;
+  }
+  .slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){
+    height: 560px;
+  }
+  .slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5){
+    height: 665px;
+  }
+  h1{
+    font-family: "Jost", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: rotate(270deg);
+    transition: 0.7s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .alinear{
+    font-family: "Jost", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: -45%;
+    transform: rotate(270deg);
+    transition: 0.7s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  .details{
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+    padding: 15px;
+  }
+  .details h2{
+    font-size: 26px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 44px;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+    display: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  .details p{
+    font-size: 20px;
+    font-weight: 70;
+    line-height: 33px;
+    text-align: left;
+    color: #fff;
+    transition: 0.7s ease;
+    display: none;
+    padding: 20px;
+    background-color: #00000069;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+  }
+  .slider-img.active{
+    width: 766px !important;
+    height: 750px !important;
+  }
+  .slider-img.active h1{
+     display: none;
+  }
+  .slider-img.active .details p, .slider-img.active .details h2{
+    display: block;
+  }
+
+  /*SPOT DE RADIO*/
+  .audio-section {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .audio-container {
+    position: relative;
+    display: inline-block;
+    background-color: #1b3553;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  .custom-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  input[type="range"] {
+    width: 150px;
+    background: #444;
+    height: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 5px;
+    border-radius: 30px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    background-color: #ffffff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+  
+  .spot{
+    font-size: 30px;
+    color: white;
+    padding: 40px;
+  }
+
+  /*PARA HACERLO RESPONSIVE*/
+  @media(max-width: 1200px){
+    .menu{
+      padding: 20px;
+      justify-content: space-between;
+    }
+  
+    .menu-2{
+      display: none;
+    }
+  
+    .logo-1{
+      width: 100px;
+    }
+  
+    .logo-2{
+      width: 0;
+    }
+  
+    .menu label{
+      display: initial;
+    }
+  
+    .menu .navbar{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #181818;
+      display: none;
+    }
+  
+    .menu .navbar ul li{
+      width: 100%;
+    }
+  
+    #menu:checked ~ .navbar{
+      display: initial;
+    }
+
+    .info{
+      padding: 30px;
+      flex-direction: column;
+    }
+  
+    .info-img{
+      width: 100%;
+      text-align: center;
+    }
+    .info-img img{
+      width: 400px;
+      height: 200px;
+      margin-bottom: 25px;
+    }
+  
+    .info-txt{
+      width: 100%;
+      text-align: center;
+    }
+  
+    .info-txt.historia{
+      font-size: 10px;
+    }
+  
+    .info-txt p{
+      font-size: 16px;
+    }
+  
+    .btn-1{
+      font-size: 16px;
+    }
+
+    .socials{
+      justify-content: center;
+    }
+  
+    .social img{
+      margin: 8px 0 0 0;
+    }
+  
+    .footer{
+      padding: 30px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .links h4{
+      margin:  25px 0px 10px 0px;
+    }
+
+    /*SCROLL*/
+    
+  }
+
+  @media (max-width: 768px) {
+
+    .slider-container{
+      overflow: hidden;
+    }
+    
+    .slider-images {
+      flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+      gap: 10px; /* Espaciado entre las imágenes */
+      overflow-y: auto; /* Permitir desplazamiento vertical */
+      height: 100%; /* Tomar toda la altura disponible */
+    }
+  
+    .slider-img {
+      width: 90%; /* Hacer que las imágenes ocupen un 90% del ancho */
+    }
+
+    h1 {
+      font-size: 30px; /* Reducir el tamaño del texto en móviles */
+      left: 10%; /* Ajustar la posición del texto en pantallas pequeñas */
+      transform: rotate(0deg); /* Volver el texto a su forma original */
+      text-align: center;
+    }
+
+    .alinear{
+      font-size: 30px; /* Reducir el tamaño del texto en móviles */
+      left: 10%; /* Ajustar la posición del texto en pantallas pequeñas */
+      transform: rotate(0deg); /* Volver el texto a su forma original */
+    }
+
+    .slider-img.active {
+      width: 90%; /* Tomar todo el ancho disponible */
+      height: auto;
+      padding: 180px;
+      transform: scale(1); /* No escalar en dispositivos móviles */
+    }
+  
+    /* Asegurarse de que los detalles se vean bien en pantallas pequeñas */
+    .details {
+      padding: 10px;
+      margin: 200px;
+    }
+
+    .slider-img img{
+      padding: 2px;
+      width: 400px;
+      height: 400px;
+    }
+  
+    .details h2{
+      font-size: 20px;
+    } 
+    
+    .details p {
+      font-size: 12px; /* Reducir aún más el tamaño del texto */
+    }
+  }
